@@ -1,0 +1,15 @@
+cabal-version:       >=1.10
+
+name:                tasty-stuck
+version:             0.1.0.0
+build-type:          Simple
+
+executable tasty-exe
+  main-is:             tasty-stuck.hs
+  build-depends:       base, tasty, tasty-hunit
+  default-language:    Haskell2010
+
+test-suite tasty-testsuite
+  type: exitcode-stdio-1.0
+  main-is: tasty-stuck.hs
+  build-depends: base, tasty, tasty-hunit
